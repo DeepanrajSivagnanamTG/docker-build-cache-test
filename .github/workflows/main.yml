@@ -21,7 +21,5 @@ jobs:
           file: ./Dockerfile
           push: false
           tags: docker-cache-test:latest
-
-          # GitHub Actions cache
           cache-from: type=gha
           cache-to: type=gha,mode=max
