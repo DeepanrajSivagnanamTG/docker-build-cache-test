@@ -19,7 +19,8 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          load: true   
+          push: false
+          outputs: type=cacheonl
           tags: docker-cache-test:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
