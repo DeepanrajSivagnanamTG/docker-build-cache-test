@@ -20,7 +20,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: false
-          outputs: type=cacheonl
+          outputs: type=cacheonly
           tags: docker-cache-test:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
